@@ -1,0 +1,237 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+  background-color: black;
+  color: white;
+}
+.insta{
+    display: flex;
+}
+.navigation_container{
+    width:20%;
+    height:100vh;
+    border-right: 1px solid rgb(144, 142, 140);
+    position: fixed;
+}
+ .navigation_container img{ 
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+    object-fit: cover;
+}
+.post_container{
+    width:50%;
+    height:100vh;
+    margin-left:300px;
+}
+.notification_container{
+    margin-left:80%;
+    margin-top:35px;
+    width:25%;
+    height:100vh;
+    position: fixed;
+}
+
+/* Story */
+
+.story{
+    display:flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color:black;
+    width:670px;
+    overflow-y:auto;
+    white-space: nowrap;
+    cursor: pointer;
+
+}
+.story::-webkit-scrollbar{
+    width: 40px;
+}
+.story .stories{
+     padding:10px; 
+}
+.story .stories a img{
+    border-radius: 50%;
+    border:3px solid #c62d8f;
+    padding: 1px;
+    object-fit:cover;
+}
+.story .stories p{
+   width: 70px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   }
+
+   /* icons */
+   
+  .icons ul{
+    list-style: none;
+  }
+  .icons ul li{
+    font-size: 17px;
+    margin-top: 40px;
+    color: rgb(221, 216, 216);
+  }
+  .icons ul li a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(144, 142, 140);
+  }
+  .icons ul li a:hover{
+    color:white;
+  }
+  .icons{
+    margin-left: 20px;
+  }
+
+  /*post*/
+
+  .posts{
+    width: 540px;
+    margin-top: 20px;
+    margin-left: 100px;
+    border-bottom: 1px solid  rgb(144, 142, 140);
+    background-color:black;
+    color: white;
+  }
+  .posts .post_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+  }
+  .posts .post_title .post_left{
+    display: flex;
+    align-items: center;
+  }
+  .posts .post_title .post_left .image{
+    margin-right: 15px;
+  }
+  .posts .post_title .post_left .image img{
+    border-radius: 50%;
+    object-fit:cover;
+  }
+  .posts .post_title .post_left .details .name{
+    padding-bottom: 2px;
+    font-weight: bold;
+  }
+  .posts .post_content img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+  }
+  .posts .post_footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+  }
+  .posts .post_footer .like_share_comment i{
+    font-size: 22px;
+    margin-right: 10px;
+  }
+  .posts .post_footer .save{
+    font-size: 22px;
+  }
+  .posts .post_footer_content{
+    padding: 0 16px 16px 16px;
+  }
+  .posts .post_footer_content p{
+    margin-bottom: 3px;
+  }
+  .posts .post_footer_content .like{
+    margin-bottom: 8px;
+  }
+  .posts .post_footer_content .name{
+    font-weight: 600;
+  }
+  .posts .post_footer_content span{
+    margin-left: 10px;
+    font-weight: normal;
+  }
+  .posts .post_footer_content .posting_time{
+    margin-top: 6px;
+    font-size: 10px;
+  }
+  .posts .add_comment{
+    padding: 16px;
+    border-bottom: 1px solid  rgb(144, 142, 140);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .posts .add_comment .left_side input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+  }
+
+  /*notification_container*/
+
+  .notification_container .profile_title{
+    display: flex;
+    align-items: center;
+  }
+  .notification_container .profile_title .profile_left{
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+  }
+  .notification_container .profile_title .profile_left .image img{
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+  }
+  .notification_container .profile_title .profile_left .details .name{
+    padding-bottom: 3px;
+  }
+  .profile_right p{
+    color: blue;
+  }
+ 
+  /*Suggestion*/
+
+  .suggestion{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  .suggestion p{
+    margin-right: 80px;
+  }
+  .suggestion span{
+    color: blue;
+  }
+  .suggestion_rigtht a{
+    text-decoration: none;
+    color: blue;
+  }
+  .suggestion_title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .suggestion_title .suggestion_left{
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+  }
+  .suggestion_title .suggestion_left .image img{
+    border-radius: 50%;
+    margin-right:15px;
+  }
+  .suggestion_title .suggestion_left .details .name{
+    padding-bottom: 3px;
+  }
+  .far{
+    color:white;
+  }
+  .fa{
+    color: red;
+  }
